@@ -1,17 +1,14 @@
-const params = new URLSearchParams(window.location.search);
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("musica");
 
-const foto = document.getElementById("foto");
-const texto = document.getElementById("texto");
-const musica = document.getElementById("musica");
-const botao = document.getElementById("abrir");
+  function iniciarMusica() {
+    if (audio.paused) {
+      audio.play().catch(() => {});
+    }
+    document.removeEventListener("click", iniciarMusica);
+    document.removeEventListener("touchstart", iniciarMusica);
+  }
 
-foto.src = params.get("foto");
-texto.innerText = params.get("texto");
-musica.src = params.get("musica");
-
-botao.onclick = () => {
-  foto.style.display = "block";
-  texto.style.display = "block";
-  musica.play();
-  botao.style.display = "none";
-};
+  document.addEventListener("click", iniciarMusica);
+  document.addEventListener("touchstart", iniciarMusica);
+});
