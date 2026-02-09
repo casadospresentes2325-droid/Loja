@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #5a189a, #240046);
   font-family: Arial, sans-serif;
-  color: white;
+  background: linear-gradient(135deg, #6a0dad, #b266ff);
+  color: #fff;
   text-align: center;
 }
 
@@ -20,9 +20,9 @@ img, video {
 }
 
 .carta {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   padding: 20px;
   border-radius: 16px;
   font-size: 18px;
   line-height: 1.6;
-  }
+}
