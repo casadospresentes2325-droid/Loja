@@ -16,7 +16,7 @@
     <img src="foto.jpg" alt="Foto especial">
 
     <!-- ÁUDIO -->
-    <audio id="musica" autoplay loop>
+    <audio id="musica" loop>
       <source src="musica.mp3" type="audio/mpeg">
       Seu navegador não suporta áudio.
     </audio>
@@ -25,10 +25,19 @@
     <div class="carta">
       <p>
         Aqui vai o texto da carta que você vai escrever para o cliente ❤️  
-        Pode ser longo, emotivo, do jeito que quiser.
+        Pode ser longo, emotivo, do jeitinho que quiser.
       </p>
     </div>
 
   </div>
+
+  <!-- SCRIPT: toca música no primeiro toque -->
+  <script>
+    document.body.addEventListener('click', function () {
+      const musica = document.getElementById('musica');
+      musica.play();
+    }, { once: true });
+  </script>
+
 </body>
 </html>
