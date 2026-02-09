@@ -1,36 +1,28 @@
 body {
-  background: #fff0f5;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #5a189a, #240046);
   font-family: Arial, sans-serif;
+  color: white;
   text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
   padding: 20px;
+}
+
+img, video {
+  max-width: 100%;
+  border-radius: 16px;
+  margin-bottom: 20px;
 }
 
 .carta {
-  max-width: 400px;
-  margin: auto;
-  background: white;
+  background: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-img {
-  width: 100%;
-  border-radius: 10px;
-  display: none;
-}
-
-button {
-  background: #ff5c8a;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-p {
-  margin-top: 15px;
-  display: none;
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 1.6;
   }
